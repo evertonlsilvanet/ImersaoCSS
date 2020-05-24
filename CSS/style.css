@@ -5,7 +5,7 @@
 }
 
 body{
-	background: #15879b;
+  background-color: whitesmoke;
   background-size: auto 100vh;
   font-family: 'Source Code Pro', monospace;
   height: 100vh;
@@ -94,7 +94,7 @@ a:hover {
 
 .site-subtitle,
 .site-title {
-  color: whitesmoke;
+  color: black;
   text-align: center;
 }
 
@@ -109,18 +109,42 @@ a:hover {
   line-height: 1.8em;
 }
 
+.logoSST,
 .sobre,
 .contato,
 .portfolio {
   padding: 3em;
   min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sobre,
+.contato {
+  color: #fff;
+  background-color: #000;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.portfolio {
+  background-image: url(../img/mustang.jpg);
+  background-attachment: fixed
+}
+
+.logoSST {
+  background-image: url(../img/sst.jpg);
+  background-attachment: fixed
 }
 
 @media (min-width: 1200px) {
   .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
 }
 }
 
@@ -220,7 +244,6 @@ a:hover {
   transform: rotateY(180deg);
 }
 
-
 .contato .icons {
   text-align: center;
 }
@@ -234,5 +257,5 @@ a:hover {
 .contato a:active,
 .contato a:hover {
   text-decoration: none;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, .5);
+  text-shadow: 0px 0px 100px rgba(255, 255, 255, .5);
 }
